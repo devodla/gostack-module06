@@ -10,9 +10,18 @@ const Stack = createStackNavigator();
 function Routes() {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name="Main" component={Main} />
+      <Stack.Navigator
+        initialRouteName="Main"
+        screenOptions={{
+          headerBackTitleVisible: false,
+          headerStyle: {
+            backgroundColor: '#7159c1',
+          },
+          headerTintColor: '#FFF',
+        }}
+      >
         <Stack.Screen name="User" component={User} />
+        <Stack.Screen name="Main" component={Main} />
       </Stack.Navigator>
     </NavigationContainer>
   );
