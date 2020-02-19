@@ -5,7 +5,8 @@ module.exports = {
   extends: [
     'airbnb',
     'prettier',
-    'prettier/react'
+    'prettier/react',
+    '@react-native-community'
   ],
   globals: {
     Atomics: 'readonly',
